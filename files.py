@@ -5,7 +5,7 @@ st.subheader('Upoading the CSV file :')
 df = st.file_uploader('Upload the CSV file :', type =['csv','xlsx'])
 
 st.subheader('Loading the CSV file :')
-csv_file = pd.read_csv("C:/Users/madhu/OneDrive/Desktop/streamlit/Football.csv")
+csv_file = pd.read_csv("Football.csv")
 if csv_file is not None:
     st.table(csv_file.head())
 
